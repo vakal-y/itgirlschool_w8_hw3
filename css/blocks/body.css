@@ -1,0 +1,147 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 200px;
+    margin-bottom: 110px;
+}
+
+.main-heading {
+    margin-left: 55px;
+    margin-top: 85px;
+}
+
+/* grid*/
+
+.main-grid {
+    width: 1240px;
+    height: 760px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 365px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "item-1 item-2 item-3"
+        "item-4 item-5 item-6"
+        "item-7 item-8 item-9";
+    margin-left: 55px;
+    margin-top: 40px;
+    column-gap: 70px;
+    row-gap: 25px;
+}
+
+.item {
+    width: 365px;
+}
+
+.item p {
+    margin-top: 10px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item-9 {
+    width: 365px;
+    height: 230px;
+
+    margin-top: -25px;
+    padding-left: 18px;
+    padding-top: 25px;
+    row-gap: 10px;
+    background: #EC615B;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.grid-heading {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000;
+}
+
+/* footer */
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 55px;
+    column-gap: 35px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.nav-item a:hover {
+    letter-spacing: 0.02em;
+
+    color: #EC615B;
+
+    transition: 0.3s linear;
+}
+
+.field-footer {
+    width: 328px;
+
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 9px 14px 9px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000000;
+}
+
+.form-style input[type=submit],
+.form-style input[type=button] {
+    width: 135px;
+    height: 38px;
+
+    padding: 8px 15px 8px 15px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.form-style input[type=submit]:hover,
+.form-style input[type=button]:hover {
+    color: #5222D0;
+    letter-spacing: 0.02em;
+
+    background: #FFFFFF;
+
+    transition: 0.3s linear;
+}
